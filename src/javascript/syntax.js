@@ -23,108 +23,134 @@ Objects / Dictionaries
       declare object
       lookup key to retrieve value*/
 
-      const functions = {
-            number: (num) => {
-              if (typeof num == 'number') {return "true";
-              }
+const functions = {
+      number: (num) => {
+            if (typeof num == 'number') {
+                  return "true";
+            }
             return "false";
-            },
-       
-            isString: (str) => {
-                if (typeof str == "string") 
-                {return "string";}
-            },
- 
-            isBoolean: (boo) => {
-                  if (typeof true == 'boolean') {return "true";
-                  }
-                  return "false";
-                  },
-            
-            isArray: (arr) => {
-                  if (Array.isArray(arr)== true) {return true;
-                  }
-                  return false;
-                  },
+      },
 
-            isObject: (obj) => {
-                  if (typeof obj == 'object') {return true;
-                  }
-                  return false;
-                  },
+      isString: (str) => {
+            if (typeof str == "string") { return "string"; }
+      },
 
-            isUndefined: (undef) => {
-                  if (typeof undef == 'undefined') {return true;
-                  }
-                  return false;
-                  },
+      isBoolean: (boo) => {
+            if (typeof true == 'boolean') {
+                  return "true";
+            }
+            return "false";
+      },
 
-            ifElse: (a, b) => {
-                  if (a > b) {return a;
-                  }
-                  return b;
-                  },
+      isArray: (arr) => {
+            if (Array.isArray(arr) == true) {
+                  return true;
+            }
+            return false;
+      },
 
-            parameter: (a, b) => {
-                  if (a > b) {return a;
-                  }
-                  return b;
-                  },
+      isObject: (obj) => {
+            if (typeof obj == 'object') {
+                  return true;
+            }
+            return false;
+      },
 
-            returns: (a, b) => {
-                  if (a > b) {return a;
-                  }
-                  return b;
-                  },
+      isUndefined: (undef) => {
+            if (typeof undef == 'undefined') {
+                  return true;
+            }
+            return false;
+      },
 
-            arrayFront : (arr, num) => {
-                  arr.unshift(num);
-                  return arr;
-                  },    
-                     
-            arrayEnd : (arr, num) => {
-                  arr.push(num);
-                  return arr;
-                  },    
+      ifElse: (a, b) => {
+            if (a > b) {
+                  return a;
+            }
+            return b;
+      },
 
-            arrayUpdate : (arr, index1, input1) => {
-                  arr[index1] = input1;
-                  return arr;
-                  },
-   
-            forLoop : (arr) => {
-                  for (let i = 0; i <= b; i++) {
-                  let greeting = "Hello";
-                  let greetingNum = greeting + [i];    
-                  }
-                  return greetingNum;
-                  },
+      parameter: (a, b) => {
+            if (a > b) {
+                  return a;
+            }
+            return b;
+      },
 
-            // forLoop : (arr) => {
-            //       let newArr = [];
-            //       let b = arr.length;
-            //       for (let i = 0; i <= b; i++) {
-            //       newArr.push([i]);     
-            //       }
-            //       return newArr;
-            //       },
+      returns: (a, b) => {
+            if (a > b) {
+                  return a;
+            }
+            return b;
+      },
 
-            // forInLoop : (obj) => {
-            //       for (let property1 in object1) {
-            //       var pair = {key3: "value3"};
-            //       obj = {...obj, ...pair};
-            //       }
-            //       return newArr;
-            //       },
+      arrayFront: (arr, num) => {
+            arr.unshift(num);
+            return arr;
+      },
 
-            // whileLoop : (arr) => {
-            //       let newArr = [];
-            //       while (i < 10) {
-            //       // statement += "The number is " + i;
-            //       // i++;
-            //       newArr.push[i];         
-            // }
-            // },
-      };
+      arrayEnd: (arr, num) => {
+            arr.push(num);
+            return arr;
+      },
+
+      arrayUpdate: (arr, index1, input1) => {
+            arr[index1] = input1;
+            return arr;
+      },
+
+      forLoop: (arr) => {
+            let newArray = [];
+            for (let i = 0; i < arr.length; i++) {
+                  newArray.push(i);
+            }
+            return newArray;
+      },
+
+      // forInLoop: (obj) => {
+      //       let objects = {
+      //             Tim: 12,
+      //             James: 8,
+      //             Suzie: 9,
+      //       };
+      //       for (let object in objects) {
+      //             console.log(object);
+      //       };
+      // },
+
+      whileLoop: (arr) => {
+            let arrayTwo = [];
+            let i = 7;
+            while (i < 10) {
+                  arrayTwo.push(i);
+                  i++;
+            }
+            return arrayTwo;
+      },
+
+      doWhileLoop: (arr) => {
+            let arrayOne = [];
+            let i = 5;
+            do {
+                  arrayOne.push(i);
+                  i++;
+            } while (i < 5);
+            return arrayOne;
+      },
+
+      forEachLoop: (arr) => { 
+            let arrArray = []; 
+            arr.forEach(function(item){
+            arrArray.push(item);
+           });
+           return arrArray;
+      },
+
+
+      // objectLookup: (obj, key) => {
+      //     return obj.key;
+      // },   
+
+};
 
 export default functions;
