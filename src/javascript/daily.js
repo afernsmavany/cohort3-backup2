@@ -94,8 +94,8 @@ forInLoop: (obj) => {
 
 forOfLoop: (arr) => {
     let resultArr = [];
-    for (let i of arr) {
-    resultArr.push([i]);
+    for (const i of arr) {
+    resultArr.push(i);
   }
    return resultArr;
   },

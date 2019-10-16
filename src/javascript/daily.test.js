@@ -56,5 +56,5 @@ test('Check if For In Loop works', () => {
 });
 
 test('Check if For Of Loop works', () => {
-    expect(functions.forOfLoop([1,2,3])).toEqual([2,3,4])
+    expect(functions.forOfLoop([1,2,3])).toEqual([1,2,3])
 });
