@@ -112,7 +112,7 @@ const functions = {
             let result = "";
             let i;
             for (i in users) {
-             result += users[i] + " ";
+                  result += users[i] + " ";
             };
             return result;
       },
@@ -137,12 +137,12 @@ const functions = {
             return arrayOne;
       },
 
-      forEachLoop: (arr) => { 
-            let arrArray = []; 
-            arr.forEach(function(item){
-            arrArray.push(item);
-           });
-           return arrArray;
+      forEachLoop: (arr) => {
+            let arrArray = [];
+            arr.forEach(function (item) {
+                  arrArray.push(item);
+            });
+            return arrArray;
       },
 
       declareObject: (obj) => {
@@ -151,10 +151,10 @@ const functions = {
       },
 
       lookupKey: (key) => {
-            const person = {name: "Suzie", age: 17};
+            const person = { name: "Suzie", age: 17 };
             let result = person[key];
-            return result; 
-      } 
+            return result;
+      }
 
 };
 
