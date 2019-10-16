@@ -43,5 +43,63 @@ const functions = {
     );
   },
 
+
+// 4th Daily: Prepare for Array Work - October 15, 2019
+// Let’s dig deeper into arrays. Read the documentation on the following and create examples of each one:
+// **Basics
+//     for
+//     while
+//     do while
+// **Next Level
+//     for in
+//     for of
+
+forLoop: (arr) => {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+        newArray.push(i);
+  }
+  return newArray;
+},
+
+whileLoop: (arr) => {
+  let arrayTwo = [];
+  let i = 7;
+  while (i < 10) {
+        arrayTwo.push(i);
+        i++;
+  }
+  return arrayTwo;
+},
+
+doWhileLoop: (arr) => {
+  let arrayOne = [];
+  let i = 5;
+  do {
+        arrayOne.push(i);
+        i++;
+  } while (i < 5);
+  return arrayOne;
+},
+
+forInLoop: (obj) => {
+  let users = { fName: "Jerry", lName: "Seinfeld", age: 12 };
+  let result = "";
+  let i;
+  for (i in users) {
+        result += users[i] + " ";
+  };
+  return result;
+},
+
+forOfLoop: (arr) => {
+    let resultArr = [];
+    for (let i of arr) {
+    resultArr.push([i]);
+  }
+   return resultArr;
+  },
+  
 };
+export default functions;
 

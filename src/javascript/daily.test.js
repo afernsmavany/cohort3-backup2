@@ -39,3 +39,22 @@ test('email builder from an object / map', () => {
         .toEqual("bill.smith@evolveu.ca");
 });
 
+test('Check if For Loop works', () => {
+    expect(functions.forLoop([0, 1, 2, 3])).toEqual([0, 1, 2, 3])
+});
+
+test('Check if While Loop works', () => {
+    expect(functions.whileLoop([7, 8, 9])).toEqual([7, 8, 9])
+});
+
+test('Check if Do While Loop works', () => {
+    expect(functions.doWhileLoop([5, 6, 7])).toEqual([5])
+});
+
+test('Check if For In Loop works', () => {
+    expect(functions.forInLoop()).toEqual("Jerry Seinfeld 12 ")
+});
+
+test('Check if For Of Loop works', () => {
+    expect(functions.forOfLoop([1,2,3])).toEqual([2,3,4])
+});
