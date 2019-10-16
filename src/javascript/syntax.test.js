@@ -52,9 +52,9 @@ test('Check if For Loop works', () => {
     expect(functions.forLoop([0,1,2,3])).toEqual([0,1,2,3])
 });
 
-// test('Check if For In Loop works', () => {
-//     expect(functions.forInLoop({ Tim: 12, James: 8, Suzie: 9})).toEqual(Tim, James, Suzie)
-// });
+test('Check if For In Loop works', () => {
+    expect(functions.forInLoop()).toEqual("Jerry Seinfeld 12 ")
+});
 
 test('Check if While Loop works', () => {
     expect(functions.whileLoop([7,8,9])).toEqual([7,8,9])
@@ -68,6 +68,10 @@ test('Check if For Each Loop works', () => {
     expect(functions.forEachLoop([5,6,7])).toEqual([5,6,7])
 });
 
-// test('Check object lookup', () => {
-//     expect(functions.objectLookup()).toEqual([87, 2, 3])
-// });
+test('Check for object declared', () => {
+    expect(functions.declareObject({ name: "James", age: 57})).toEqual(("James is 57"))
+});
+
+test('Check object lookup key to retrieve value', () => {
+    expect(functions.lookupKey("name")).toEqual("Suzie")
+});

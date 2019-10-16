@@ -33,16 +33,15 @@ let first = arr[0].toLowerCase();
 let last = arr[1].toLowerCase();
 let email = first + "." + last + "@evolveu.ca";
 return email;
+},
+
+// 3rd Daily (11th Oct, 2019):
+makeEmailObj: (obj) => {
+let first = obj.fname;
+let last = obj.lname;
+let email = first + "." + last + "@evolveu.ca";
+return email;
 }
+
 };
-
-export default functions;
-
-
-
-
-
-
-
-
 

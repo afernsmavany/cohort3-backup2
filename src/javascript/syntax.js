@@ -107,16 +107,15 @@ const functions = {
             return newArray;
       },
 
-      // forInLoop: (obj) => {
-      //       let objects = {
-      //             Tim: 12,
-      //             James: 8,
-      //             Suzie: 9,
-      //       };
-      //       for (let object in objects) {
-      //             console.log(object);
-      //       };
-      // },
+      forInLoop: (obj) => {
+            let users = { fName: "Jerry", lName: "Seinfeld", age: 12 };
+            let result = "";
+            let i;
+            for (i in users) {
+             result += users[i] + " ";
+            };
+            return result;
+      },
 
       whileLoop: (arr) => {
             let arrayTwo = [];
@@ -146,10 +145,16 @@ const functions = {
            return arrArray;
       },
 
+      declareObject: (obj) => {
+            let result = obj.name + " is " + obj.age;
+            return result;
+      },
 
-      // objectLookup: (obj, key) => {
-      //     return obj.key;
-      // },   
+      lookupKey: (key) => {
+            const person = {name: "Suzie", age: 17};
+            let result = person[key];
+            return result; 
+      } 
 
 };
 
