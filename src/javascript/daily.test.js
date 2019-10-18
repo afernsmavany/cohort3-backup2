@@ -3,31 +3,35 @@ import functions from './daily'
 
 // 5th Daily: More Array Work - (October 16-17): 
 
-test('Check if Map method works', () => {
-    expect(functions.mapFunc([1, 2, 3])).toEqual([8, 16, 24])
+test('Check if Slice works', () => {
+    expect(functions.sliceFunc(['Paris', 'Calgary', 'Mumbai', 'Philadelphia'])).toEqual(['Mumbai', 'Philadelphia'])
 });
 
-test('Check if Filter method works', () => {
-    expect(functions.filterFunc([18, 25, 35, 48, 60])).toEqual([18, 48, 60])
+test('Check if Splice works', () => {
+    expect(functions.spliceFunc(['Ferrari', 'Bugatti', 'Maserati'])).toEqual(['Ferrari', 'Lotus', 'Bugatti', 'Maserati'])
+});
+
+test('Check if For Each Loop works', () => {
+    expect(functions.forEachLoop([5, 6, 7])).toEqual([5, 6, 7])
+});
+
+test('Check if Map method works', () => {
+    expect(functions.mapFunc([1, 2, 3])).toEqual([8, 16, 24])
 });
 
 test('Check if Reduce method works', () => {
     expect(functions.reduceFunc([1, 2, 3])).toEqual(6)
 });
 
+test('Check if Filter method works', () => {
+    expect(functions.filterFunc([18, 25, 35, 48, 60])).toEqual([18, 48, 60])
+});
+
 test('Check if Sort method works', () => {
     expect(functions.sortFunc([8, 9, 10])).toEqual([10, 8, 9])
 });
 
-
-
-
-
-
-
-
-
-
+// 1st Daily (7th Oct, 2019):
 
 test('Check equality', () => {
     expect(functions.assertEquals(1, 1)).toBe(true);
@@ -66,6 +70,8 @@ test('email builder from an object / map', () => {
     expect(functions.makeEmailObj({ fname: "Bill", lname: "Smith" }))
         .toEqual("bill.smith@evolveu.ca");
 });
+
+// 4th Daily: Prepare for Array Work - October 15, 2019
 
 test('Check if For Loop works', () => {
     expect(functions.forLoop([0, 1, 2, 3])).toEqual([0, 1, 2, 3])

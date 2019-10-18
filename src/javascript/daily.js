@@ -13,12 +13,39 @@
 
 const functions = {
 
+  sliceFunc: () => {
+    let cities = ['Paris', 'Calgary', 'Mumbai', 'Philadelphia'];
+    let sliceCities = cities.slice(2);
+    return sliceCities;
+  },
+
+  spliceFunc: () => {
+    let cars = ['Ferrari', 'Bugatti', 'Maserati'];
+    cars.splice(1, 0, 'Lotus');
+    return cars;
+  },
+
+  forEachLoop: (arr) => {
+    let arrArray = [];
+    arr.forEach(function (item) {
+      arrArray.push(item);
+    });
+    return arrArray;
+  },
+
   mapFunc: () => {
     const array = [1, 2, 3];
     const mapArr = array.map(number => {
       return number * 8;
     })
     return mapArr;
+  },
+
+  reduceFunc: () => {
+    const array2 = [1, 2, 3,];
+    const reduceArr = array2.reduce((acc, curr) =>
+      acc + curr);
+    return reduceArr;
   },
 
   filterFunc: () => {
@@ -29,20 +56,13 @@ const functions = {
     return filterArr;
   },
 
-  reduceFunc: () => {
-    const array2 = [1, 2, 3,];
-    const reduceArr = array2.reduce((acc, curr) =>
-      acc + curr);
-    return reduceArr;
-  },
-
   sortFunc: () => {
     const array3 = [8, 9, 10,];
     const sortedArr = array3.sort();
     return sortedArr;
   },
 
-  /*	
+  /*	1st Daily - AssertEquals (October 7, 2019)
     Write the function that will create this output:
   
   *** the two values are not the same:
