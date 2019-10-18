@@ -1,4 +1,4 @@
-import functions from './canadiantaxes.js'
+import functions from './canadiantaxes.js';
 
 // $1.00	⇒	$.15
 // $2.00	⇒	$.30

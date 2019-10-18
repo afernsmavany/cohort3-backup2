@@ -1,19 +1,61 @@
-/*	
-	Write the function that will create this output:
 
-*** the two values are not the same:
-    p1--> a
-    p2--> b
-*** the two values are not the same:
-    p1--> 1
-    p2--> 2
-*** the two values are not the same:
-    p1--> 2
-    p2--> 2
-*/
+// 5th Daily: More Array Work - (October 16-17) 
+// Continue from yesterday. Read the article:
+// https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d 
+// Read the documentation on the following and create examples of each one:
+//   slice
+//   splice
+//   forEach
+//   map
+//   reduce
+//   filter
+//   sort
 
-// Write the function after this comment ---
 const functions = {
+
+  mapFunc: () => {
+    const array = [1, 2, 3];
+    const mapArr = array.map((number) => {
+      return number * 8;
+    })
+    return mapArr;
+  },
+
+  filterFunc: () => {
+    const array1 = [18, 25, 35, 48, 60];
+    const filterArr = array1.filter(number => 
+      (number > 15 && number % 3 === 0)
+    );
+    return filterArr;
+  },
+
+  reduceFunc: () => {
+    {
+      const array2 = [1,2,3,4,5,6,7,8,9,10];
+      const reduceArr = array2.reduce(acc, curr => 
+      (number > 5 && number % 2 === 0)
+      ); 
+      return reduceArr;  
+    }, 
+
+
+
+  /*	
+    Write the function that will create this output:
+  
+  *** the two values are not the same:
+      p1--> a
+      p2--> b
+  *** the two values are not the same:
+      p1--> 1
+      p2--> 2
+  *** the two values are not the same:
+      p1--> 2
+      p2--> 2
+  */
+
+  // Write the function after this comment ---
+
   assertEquals: (num1, num2) => {
     if (num1 == num2) {
       return true;
@@ -43,63 +85,64 @@ const functions = {
     );
   },
 
+  // 4th Daily: Prepare for Array Work - October 15, 2019
+  // Let’s dig deeper into arrays. Read the documentation on the following and create examples of each one:
+  // **Basics
+  //     for
+  //     while
+  //     do while
+  // **Next Level
+  //     for in
+  //     for of
 
-// 4th Daily: Prepare for Array Work - October 15, 2019
-// Let’s dig deeper into arrays. Read the documentation on the following and create examples of each one:
-// **Basics
-//     for
-//     while
-//     do while
-// **Next Level
-//     for in
-//     for of
+  forLoop: (arr) => {
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+      newArray.push(i);
+    }
+    return newArray;
+  },
 
-forLoop: (arr) => {
-  let newArray = [];
-  for (let i = 0; i < arr.length; i++) {
-        newArray.push(i);
-  }
-  return newArray;
-},
+  whileLoop: (arr) => {
+    let arrayTwo = [];
+    let i = 7;
+    while (i < 10) {
+      arrayTwo.push(i);
+      i++;
+    }
+    return arrayTwo;
+  },
 
-whileLoop: (arr) => {
-  let arrayTwo = [];
-  let i = 7;
-  while (i < 10) {
-        arrayTwo.push(i);
-        i++;
-  }
-  return arrayTwo;
-},
+  doWhileLoop: (arr) => {
+    let arrayOne = [];
+    let i = 5;
+    do {
+      arrayOne.push(i);
+      i++;
+    } while (i < 5);
+    return arrayOne;
+  },
 
-doWhileLoop: (arr) => {
-  let arrayOne = [];
-  let i = 5;
-  do {
-        arrayOne.push(i);
-        i++;
-  } while (i < 5);
-  return arrayOne;
-},
+  forInLoop: (obj) => {
+    let users = { fName: "Jerry", lName: "Seinfeld", age: 12 };
+    let result = "";
+    let i;
+    for (i in users) {
+      result += users[i] + " ";
+    };
+    return result;
+  },
 
-forInLoop: (obj) => {
-  let users = { fName: "Jerry", lName: "Seinfeld", age: 12 };
-  let result = "";
-  let i;
-  for (i in users) {
-        result += users[i] + " ";
-  };
-  return result;
-},
-
-forOfLoop: (arr) => {
+  forOfLoop: (arr) => {
     let resultArr = [];
     for (const i of arr) {
-    resultArr.push(i);
-  }
-   return resultArr;
+      resultArr.push(i);
+    }
+    return resultArr;
   },
-  
+
 };
 export default functions;
+
+
 

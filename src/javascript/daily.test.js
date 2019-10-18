@@ -1,6 +1,30 @@
 
 import functions from './daily'
 
+// 5th Daily: More Array Work - (October 16-17): 
+
+test('Check if Map method works', () => {
+    expect(functions.mapFunc([1, 2, 3])).toEqual([8, 16, 24])
+});
+
+test('Check if Filter method works', () => {
+    expect(functions.filterFunc([18, 25, 35, 48, 60])).toEqual([18, 48, 60])
+});
+
+test('Check if Reduce method works', () => {
+    expect(functions.reduceFunc([10, 20, 30, 40, 50])).toEqual([150])
+});
+
+
+
+
+
+
+
+
+
+
+
 test('Check equality', () => {
     expect(functions.assertEquals(1, 1)).toBe(true);
     expect(functions.assertEquals("a", "b")).toBe(false);
@@ -56,5 +80,5 @@ test('Check if For In Loop works', () => {
 });
 
 test('Check if For Of Loop works', () => {
-    expect(functions.forOfLoop([1,2,3])).toEqual([1,2,3])
+    expect(functions.forOfLoop([1, 2, 3])).toEqual([1, 2, 3])
 });
