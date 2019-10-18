@@ -15,6 +15,10 @@ test('Check if Reduce method works', () => {
     expect(functions.reduceFunc([1, 2, 3])).toEqual(6)
 });
 
+test('Check if Sort method works', () => {
+    expect(functions.sortFunc([8, 9, 10])).toEqual([10, 8, 9])
+});
+
 
 
 

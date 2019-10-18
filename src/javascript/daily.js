@@ -15,7 +15,7 @@ const functions = {
 
   mapFunc: () => {
     const array = [1, 2, 3];
-    const mapArr = array.map((number) => {
+    const mapArr = array.map(number => {
       return number * 8;
     })
     return mapArr;
@@ -37,10 +37,9 @@ const functions = {
   },
 
   sortFunc: () => {
-    const array2 = [1, 2, 3,];
-    const reduceArr = array2.reduce((acc, curr) =>
-      acc + curr);
-    return reduceArr;
+    const array3 = [8, 9, 10,];
+    const sortedArr = array3.sort();
+    return sortedArr;
   },
 
   /*	
