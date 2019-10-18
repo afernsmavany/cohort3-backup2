@@ -12,7 +12,7 @@ test('Check if Filter method works', () => {
 });
 
 test('Check if Reduce method works', () => {
-    expect(functions.reduceFunc([10, 20, 30, 40, 50])).toEqual([150])
+    expect(functions.reduceFunc([1, 2, 3])).toEqual(6)
 });
 
 

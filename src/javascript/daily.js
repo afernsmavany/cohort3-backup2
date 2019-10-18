@@ -23,22 +23,25 @@ const functions = {
 
   filterFunc: () => {
     const array1 = [18, 25, 35, 48, 60];
-    const filterArr = array1.filter(number => 
+    const filterArr = array1.filter(number =>
       (number > 15 && number % 3 === 0)
     );
     return filterArr;
   },
 
   reduceFunc: () => {
-    {
-      const array2 = [1,2,3,4,5,6,7,8,9,10];
-      const reduceArr = array2.reduce(acc, curr => 
-      (number > 5 && number % 2 === 0)
-      ); 
-      return reduceArr;  
-    }, 
+    const array2 = [1, 2, 3,];
+    const reduceArr = array2.reduce((acc, curr) =>
+      acc + curr);
+    return reduceArr;
+  },
 
-
+  sortFunc: () => {
+    const array2 = [1, 2, 3,];
+    const reduceArr = array2.reduce((acc, curr) =>
+      acc + curr);
+    return reduceArr;
+  },
 
   /*	
     Write the function that will create this output:
