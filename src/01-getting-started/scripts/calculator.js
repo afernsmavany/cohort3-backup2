@@ -1,21 +1,22 @@
 
-  // -----------------------Calculator-------------------------------
+const calFunc = {
 
-function dis (val) 
-{ 
-    document.getElementById("result").value+=val 
-}
+  addNumbers: (num1, num2) => {
+    return num1 + num2;
+  },
 
-function solve () 
-{ 
-    let x = document.getElementById("result").value 
-    let y = eval(x) 
-    document.getElementById("result").value = y 
-} 
+  subNumbers: (num1, num2) => {
+    return num1 - num2;
+  },
 
-function clr () 
-{ 
-    document.getElementById("result").value = "" 
-} 
+  divNumbers: (num1, num2) => {
+    return num1 / num2;
+  },
 
-export default functions;
+  mulNumbers: (num1, num2) => {
+    return num1 * num2;
+  },
+
+};
+
+export default calFunc;

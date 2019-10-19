@@ -121,21 +121,24 @@
 
     <body>
         <div class=title>My Calculator</div><br>
-
-        <input id="input1" type="text" name="Input">Number 1<br>
-        <br>
-        <br>
-        <input id="input2" type="text" name="Input">Number 2<br>
-
         <div class="container1">
+            <input id="input1" type="text" name="Input">Input number 1<br>
+        </div>
+        <br>
+        <br>
+        <div class="container2">
+            <input id="input2" type="text" name="Input">Input number 2<br>
+        </div>
+        <div class="container3">
             <button id="add" type="button">+</button><br>
             <button id="subtract" type="button">-</button><br>
             <button id="divide" type="button">/</button><br>
             <button id="multiply" type="button">*</button><br>
         </div>
         <br>
-        <h2 id="textSize"></h2>
-        <script src="./scripts/main.js" type="module"></script>
+        <h2 id="resultText">Result =</h2>
+        <h3 id="resultFinal"></h3>
+        <script src="./main.js" type="module"></script>
     </body>
 
     <!-- Footer -->
@@ -180,26 +183,6 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
-
-        // To delete: 
-        // const functions = {
-        //     sumNum: (num) 
-        //     {
-        //         document.getElementById("input").value += num
-        //     },
-
-        //     solve: () => {
-        //         let x = document.getElementById("input").value
-        //         let y = eval(x)
-        //         document.getElementById("input").value = y
-
-        //     },
-
-        //     clr: () => {
-        //         document.getElementById("input").value = ""
-        //     },
-        // };
-
 
     </script>
 
