@@ -13,6 +13,12 @@
 
 const functions = {
 
+  sliceFunc: () => {
+    let cities = ['Paris', 'Calgary', 'Mumbai', 'Philadelphia'];
+    let slicedCities = cities.slice(1);
+    return slicedCities;
+  },
+
   spliceFunc: () => {
     let cars = ['Ferrari', 'Bugatti', 'Maserati'];
     cars.splice(1, 0, 'Lotus');

@@ -79,13 +79,13 @@ html {
 
 /* ----------------------  Calculator: ----------------------- */
 
-.title{ 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10px; 
-    text-align:center; 
-    size: 1125cm;
+        .title{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px; 
+        text-align:center; 
+        size: 1125cm;
 		color:black; 
 		border: solid black 2px; 
         } 
@@ -141,3 +141,5 @@ html {
         justify-content: center;
         color: black;
        }
+
+       /* ----------------- Canadian Taxes: ------------------------- */

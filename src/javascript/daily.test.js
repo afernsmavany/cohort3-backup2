@@ -4,7 +4,7 @@ import functions from './daily'
 // 5th Daily: More Array Work - (October 16-17): 
 
 test('Check if Slice works', () => {
-    expect(functions.sliceFunc(['Paris', 'Calgary', 'Mumbai', 'Philadelphia'])).toEqual(['Mumbai', 'Philadelphia'])
+    expect(functions.sliceFunc(['Paris', 'Calgary', 'Mumbai', 'Philadelphia'])).toEqual(['Calgary', 'Mumbai', 'Philadelphia'])
 });
 
 test('Check if Splice works', () => {
