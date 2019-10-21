@@ -1,7 +1,5 @@
 <!-- 
-
     Insporation drawn from: https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm#about
-
  -->
 
 <!DOCTYPE html>
@@ -115,53 +113,93 @@
 
     <!-- -------------------------Calculator:----------------------------------- -->
 
-    <head>
+    <div class=title>My Calculator</div><br>
+    <div class="container1">
+        <input id="input1" type="text" name="Input">Input number 1<br>
+    </div>
+    <br>
+    <br>
+    <div class="container2">
+        <input id="input2" type="text" name="Input">Input number 2<br>
+    </div>
+    <div class="container3">
+        <button id="add" type="button">+</button><br>
+        <button id="subtract" type="button">-</button><br>
+        <button id="divide" type="button">/</button><br>
+        <button id="multiply" type="button">*</button><br>
+    </div>
+    <br>
+    <h2 id="resultText">Result =</h2>
+    <h3 id="resultFinal"></h3>
+    <script src="./main.js" type="module"></script>
 
-    </head>
-
-    <body>
-        <div class=title>My Calculator</div><br>
-        <div class="container1">
-            <input id="input1" type="text" name="Input">Input number 1<br>
-        </div>
-        <br>
-        <br>
-        <div class="container2">
-            <input id="input2" type="text" name="Input">Input number 2<br>
-        </div>
-        <div class="container3">
-            <button id="add" type="button">+</button><br>
-            <button id="subtract" type="button">-</button><br>
-            <button id="divide" type="button">/</button><br>
-            <button id="multiply" type="button">*</button><br>
-        </div>
-        <br>
-        <h2 id="resultText">Result =</h2>
-        <h3 id="resultFinal"></h3>
-        <script src="./main.js" type="module"></script>
-    </body>
 
     <!---------------------- Canadian Taxes -------------->
 
-    <head>
-        <div class=title>Canadian Taxes</title>
-        </div><br>
-    </head>
+    <div class=title>Canadian Taxes</title>
+    </div><br>
 
-    <body>
-        <h1>
-            Canadian Tax Calculator
-        </h1>
-        Input: <input id="input" type="text" name="Input"><br>
-        <br>Please input your salary ($)<br>
-        <br>
-        <div class="container5"></div>
-        <button id="click" type="button">Calculate tax payable ($)</button><br>
-        </div>
-        <h2 id="output"></h2>
+    <h1>
+        Canadian Tax Calculator
+    </h1>
+    Input: <input id="input" type="text" name="Input"><br>
+    <br>Please input your salary ($)<br>
+    <br>
+    <div class="container5"></div>
+    <button id="click" type="button">Calculate tax payable ($)</button><br>
+    </div>
+    <h2 id="output"></h2>
 
-        <script src="./canadiantaxes.js" type="module"></script>
-    </body>
+    <script src="./canadiantaxes.js" type="module"></script>
+
+
+    <!-- ------------------------- Working with Arrays: ------------------------------------------- -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>
+        <!-- <div class=title> -->
+        Working with Arrays
+        <!-- </div><br> -->
+    </h1>
+    <input id="inputArr" type="text" name="Input"><br>
+    </div>
+    <br>
+    <br>
+    <div class="container3">
+        <button id="addArr" type="button">Add</button><br>
+        <button id="show" type="button">Show</button><br>
+        <button id="total" type="button">Total</button><br>
+        <button id="clear" type="button">Clear</button><br>
+    </div>
+    <br>
+    <h4 id="messageArea">Message Area=</h4>
+    <h4 id="messageFinal"></h4>
+    <script src="./main.js" type="module"></script>
+
+
+<!-- ------------------------- Working with Dictionaries: ------------------------------------------- -->
+<br>
+<br>
+<br>
+<br>
+<h1>
+    <!-- <div class=title> -->
+        Working with Dictionaries
+    <!-- </div><br> -->
+</h1>
+<input id="inputLookup" type="text" name="InputLookup"><br>
+</div>
+<br>
+<br>
+<div class="container3">
+    <button id="lookup" type="button">Lookup</button><br>
+</div>
+<br>
+<h4 id="outputArea">Message Area=</h4>
+<h4 id="outputFinal"></h4>
+<script src="./main.js" type="module"></script>
 
 
     <!-- Footer -->

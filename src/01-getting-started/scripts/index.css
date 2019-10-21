@@ -110,14 +110,14 @@ html {
         padding-bottom: 1%;
         }
 
-    .container3 {
+       .container3 {
        display: flex;
        flex-wrap: wrap;
        justify-content: center;
        size: 100vh;
 	   background-color: rebeccapurple;
        padding-bottom: 1%;
-      }
+       } 
 
 		input[type="button"] 
 		{ 

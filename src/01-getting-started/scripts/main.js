@@ -1,7 +1,7 @@
 import functions from './functions.js';
 import calFunc from './calculator.js';
 import taxFunc from './canadiantaxes.js';
-
+import arrayFunc from './workingWithArrays.js';
 
 // **********
 //
@@ -54,3 +54,32 @@ function onButtonClicked() {
     output.textContent = taxFunc.taxSlabs(userInput).toFixed(2);
 };
 
+// ------------------ Working with Arrays: -------------------------------
+
+addArr.addEventListener("click", () => {
+    let numInput = (inputArr.value);
+    let outputAdd = arrayFunc.adding(numInput);
+    messageFinal.innerText = outputAdd;
+});
+
+show.addEventListener("click", () => {
+    let outputShow = arrayFunc.showing(originArr);
+    messageFinal.innerText = outputShow;
+});
+
+total.addEventListener("click", () => {
+    let outputTotal = arrayFunc.totalling(originArr);
+    messageFinal.innerText = outputTotal;
+});
+
+clear.addEventListener("click", () => {
+    let outputClear = arrayFunc.clearing(originArr);
+    messageFinal.innerText = outputClear;
+});
+
+// ------------------ Working with Dictionaries: -------------------------------
+
+inputLookup.addEventListener("click", () => {
+    // let outputClear = arrayFunc.clearing(originArr);
+    // messageFinal.innerText = outputClear;
+});
