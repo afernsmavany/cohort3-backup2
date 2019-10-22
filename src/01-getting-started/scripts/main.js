@@ -2,6 +2,7 @@ import functions from './functions.js';
 import calFunc from './calculator.js';
 import taxFunc from './canadiantaxes.js';
 import arrayFunc from './workingWithArrays.js';
+import objFunc from './workingWithDiction.js';
 
 // **********
 //
@@ -74,12 +75,17 @@ total.addEventListener("click", () => {
 
 clear.addEventListener("click", () => {
     let outputClear = arrayFunc.clearing(originArr);
-    messageFinal.innerText = outputClear;
 });
 
 // ------------------ Working with Dictionaries: -------------------------------
 
 inputLookup.addEventListener("click", () => {
-    // let outputClear = arrayFunc.clearing(originArr);
-    // messageFinal.innerText = outputClear;
+    let inputShortcode = (inputLookup.value);
+    let outputProvince = objFunc(inputShortcode);
+    outputFinal.innerText = outputProvince;
+    
 });
+
+
+
+

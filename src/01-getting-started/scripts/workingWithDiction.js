@@ -1,66 +1,78 @@
 
 const provinces = [
   {
-    shortcode: ab,
+    shortcode: "ab",
     province: "Alberta"
   },
   {
-    shortcode: bc,
+    shortcode: "bc",
     province: "British Columbia"
   },
   {
-    shortcode: sk,
+    shortcode: "sk",
     province: "Saskatchewan"
   },
   {
-    shortcode: nl,
+    shortcode: "nl",
     province: "Newfoundland and Labrador"
   },
   {
-    shortcode: mb,
+    shortcode: "mb",
     province: "Manitoba"
   },
   {
-    shortcode: qc,
+    shortcode: "qc",
     province: "Quebec"
   },
   {
-    shortcode: ont,
+    shortcode: "ont",
     province: "Ontario"
   },
   {
-    shortcode: nb,
+    shortcode: "nb",
     province: "New Brunswick"
   },
   {
-    shortcode: ns,
+    shortcode: "ns",
     province: "Nova Scotia"
   },
   {
-    shortcode: nu,
+    shortcode: "nu",
     province: "Nunavut"
   },
   {
-    shortcode: nt,
+    shortcode: "nt",
     province: "Northwest Territories"
   },
   {
-    shortcode: yt,
+    shortcode: "yt",
     province: "Yukon"
   },
   {
-    shortcode: bc,
+    shortcode: "bc",
     province: "Prince Edward Island"
   },
 ];
 
-
-function objFunc() {
-  for (const element of provinces) {
-    if (           shortcode.toLowerCase()===provinces.shortcode[element]) {
-      return provinces.shortcode[element]
+function objFunc(inputShortcode) {
+  for (let element of provinces) {
+    if (element.shortcode===inputShortcode.toLowerCase()) {
+      return element.province;
     }
   }
+  return "Not a valid province code";
 };
 
 export default objFunc;
+
+
+
+
+
+
+
+
+
+
+
+
