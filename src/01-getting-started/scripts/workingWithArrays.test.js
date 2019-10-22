@@ -6,11 +6,11 @@ test('Check if "adding" function works', () => {
 });
 
 test('Check if "showing" function works', () => {
-  expect(arrayFunc.showing([2, 4, 6])).toEqual("2, 4, 6");
+  expect(arrayFunc.showing([2,4,6])).toEqual("2,4,6");
 });
 
 test('Check if "totalling" function works', () => {
-  expect(arrayFunc.totalling(34, 25, 54)).toEqual([113])
+  expect(arrayFunc.totalling([34,25,54])).toEqual(113)
 });
 
 test('Check if "clearing" function works', () => {

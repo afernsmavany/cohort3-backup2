@@ -6,28 +6,26 @@ let optionC = 0;
 
 const arrayFunc = {
 
-  adding: () => {
+  adding: (numInput) => {
     if 
-    (numInput === NaN) {
+    (typeof numInput != 'number') {
       optionA = "Input is not a valid number";
     }
-    else 
-    (numInput !== NaN) 
-    { originArr.push(numInput);
+    else { originArr.push(numInput);
       optionA = "Number has been added to the array";
     }
     return optionA;
   },
   
-  showing: () => {
+  showing: (originArr) => {
       optionB += originArr.toString(numInput);
       return optionB;
   },
 
-  totalling: () => {
-    optionC = originArr.reduce((acc, cur) => {
-     acc + cur});
-      return optionC; 
+  totalling: (originArr) => {
+    const reducer = (acc, cur) => acc + cur;
+    optionC = originArr.reduce(reducer);
+    return optionC; 
   },
 
   clearing: () => {
@@ -39,21 +37,3 @@ const arrayFunc = {
 
 export default arrayFunc;
 
-// const arrayFunc = {
-
-//   adding: () => {
-//     //if (Number.isNaN(numInput)) {
-//      console.log(numInput);  
-//       if (typeof numInput === 'string' || numInput instanceof String) {
-//     optionA = "Input is not a valid number";
-//     }
-//     else if (typeof numInput === 'number' && isFinite(numInput))
-//     { 
-//       originArr.push(numInput);
-//       optionA = "Number has been added to the array";  
-//     }
-//     //console.log
-//     //return (originArr.toString());
-//      return optionA;
-//   },
-// };
