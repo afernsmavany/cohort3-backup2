@@ -22,7 +22,7 @@ const provinces = [
   },
   {
     shortcode: qc,
-    province: Quebec
+    province: "Quebec"
   },
   {
     shortcode: ont,
@@ -61,6 +61,6 @@ function objFunc() {
       return provinces.shortcode[element]
     }
   }
-  
+};
 
 export default objFunc;
