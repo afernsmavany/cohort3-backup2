@@ -1,4 +1,21 @@
 
+// 6th Daily: loopStaff - October 21, 2019
+
+// Write a function that will take an array and return an array of emails. The new function you are writing today will 
+// call makeEmailObj that you have written in a previous exercise. 
+// Copy and paste the code provided and you know the rest of the stick...Test first.
+
+const functions = {
+
+loopStaff: (staff) => {
+  let staffEmail = [];
+staff.forEach(function(element) {
+   let emailsEach = functions.makeEmailObj(element);
+   staffEmail.push(emailsEach)});
+    return staffEmail;
+},
+
+
 // 5th Daily: More Array Work - (October 16-17) 
 // Continue from yesterday. Read the article:
 // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d 
@@ -10,8 +27,6 @@
 //   reduce
 //   filter
 //   sort
-
-const functions = {
 
   sliceFunc: () => {
     let cities = ['Paris', 'Calgary', 'Mumbai', 'Philadelphia'];

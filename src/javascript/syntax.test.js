@@ -2,6 +2,7 @@ import functions from './syntax'
 
 test('Check if number', () => {
     expect(functions.number(34)).toBe("true")
+    expect(functions.number("abc")).toBe("false")
 });
 
 test('Check if string', () => {
@@ -10,30 +11,37 @@ test('Check if string', () => {
 
 test('Check if boolean', () => {
     expect(functions.isBoolean(true)).toBe("true")
+    expect(functions.isBoolean()).toBe("false")
 });
 
 test('Check if array', () => {
     expect(functions.isArray([1, 2, 3])).toBe(true)
+    expect(functions.isArray("today")).toBe(false)
 });
 
 test('Check if object', () => {
     expect(functions.isObject({ B: 1 })).toBe(true)
+    expect(functions.isObject("hello")).toBe(false)
 });
 
 test('Check if undefined', () => {
     expect(functions.isUndefined()).toBe(true)
+    expect(functions.isUndefined("Hello")).toBe(false)
 });
 
 test('Check If Else', () => {
     expect(functions.ifElse(3, 6)).toEqual(6)
+    expect(functions.ifElse(19, 18)).toEqual(19)
 });
 
 test('Check if parameters received', () => {
     expect(functions.parameter()).toBe(undefined)
+    expect(functions.parameter(24,14)).toBe(24)
 });
 
 test('Check if function returns', () => {
     expect(functions.returns()).toBe(undefined)
+    expect(functions.returns(345, 178)).toBe(345)
 });
 
 test('Check if adds element to front of array', () => {

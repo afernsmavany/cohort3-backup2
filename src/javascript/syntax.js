@@ -43,7 +43,7 @@ const functions = {
       },
 
       isArray: (arr) => {
-            if (Array.isArray(arr) == true) {
+            if (Array.isArray(arr) === true) {
                   return true;
             }
             return false;

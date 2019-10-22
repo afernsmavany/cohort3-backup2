@@ -1,0 +1,13 @@
+.divContainer {
+border: 5 px solid black;
+width: 80%;
+height: 400px;
+margin: 10px 10px;
+
+}
+
+.cards {
+  border: 5 px solid black;
+  height: 100px;
+  margin: 10px 10px;
+}

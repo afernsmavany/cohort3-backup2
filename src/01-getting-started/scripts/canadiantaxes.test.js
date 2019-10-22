@@ -9,17 +9,17 @@ test('Check tax payable', () => {
 });
 
 test('Check tax payable', () => {
-  expect(taxFunc.taxSlabs(50000)).toEqual(7630.35)
+  expect(taxFunc.taxSlabs(50000)).toEqual(7630.85)
 });
 
 test('Check tax payable', () => {
-  expect(taxFunc.taxSlabs(100000)).toEqual(18541.11)
+  expect(taxFunc.taxSlabs(100000)).toEqual(18140.66)
 });
 
 test('Check tax payable', () => {
-  expect(taxFunc.taxSlabs(150000)).toEqual(31211.10)
+  expect(taxFunc.taxSlabs(150000)).toEqual(31211.57)
 });
 
 test('Check tax payable', () => {
-  expect(taxFunc.taxSlabs(250000)).toEqual(61796.26)
+  expect(taxFunc.taxSlabs(250000)).toEqual(61796.57)
 });
