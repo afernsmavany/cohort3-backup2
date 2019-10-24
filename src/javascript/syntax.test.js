@@ -11,7 +11,7 @@ test('Check if string', () => {
 
 test('Check if boolean', () => {
     expect(functions.isBoolean(true)).toBe("true")
-    expect(functions.isBoolean()).toBe("false")
+    expect(functions.isBoolean("dtr")).toBe("false")
 });
 
 test('Check if array', () => {

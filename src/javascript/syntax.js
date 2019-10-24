@@ -35,8 +35,8 @@ const functions = {
             if (typeof str == "string") { return "string"; }
       },
 
-      isBoolean: (boo) => {
-            if (typeof true == 'boolean') {
+      isBoolean: (val) => {
+            if (typeof val === 'boolean') {
                   return "true";
             }
             return "false";
