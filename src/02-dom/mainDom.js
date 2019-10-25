@@ -1,10 +1,9 @@
-// import functions from './basicDom.js';
+import functions from './basicDom.js';
 
-// let divCont = document.getElementsByClassName("container");
-// let divManipulate = divCont.addEventListener("click", () => {
-//   console.log("click");
-// });
+container.addEventListener("click", (event) => {
+  console.log(event.target);
+});
 
-
-
-
+show.addEventListener("click", (event) => {
+  console.log(event.target.);
+});
