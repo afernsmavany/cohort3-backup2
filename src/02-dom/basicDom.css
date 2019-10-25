@@ -1,9 +1,12 @@
 
-.container {
-border: solid 20px black;
-/* padding: 20 px; */
-height: 100px;
-width: 100px;
-
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 20px black;
+  margin: auto;
+  width: 15%;
+ text-align: center;
 
 }
+
