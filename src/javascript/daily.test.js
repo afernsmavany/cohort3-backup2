@@ -1,11 +1,7 @@
 
 import functions from './daily'
 
-// 6th Daily (October 21, 2019): 
-/*
-    Sample data for the next few exercises.
-*/
-
+// 7th Daily:- loopStaff: in / of - October 24, 2019
 const data = {
     staff: [
         { fname: "Jane", lname: "Smith", balance: 10 },
@@ -21,19 +17,58 @@ const data = {
     prov: "Alberta"
 };
 
-/*	
-	Write the function to build email addresses for the company.
-*/
-
-test('email builder for company', () => {
-    const staffEmail = functions.loopStaff(data.staff);
-    expect(staffEmail[0])
+test('For in loop Staff Email for company', () => {
+    const loopStaffEmail = functions.loopStaffIn(data.staff);
+    expect(loopStaffEmail[0])
         .toEqual("jane.smith@evolveu.ca");
-    expect(staffEmail[3])
+    expect(loopStaffEmail[3])
         .toEqual("olivia.notly@evolveu.ca");
-    expect(staffEmail[6])
+    expect(loopStaffEmail[6])
         .toEqual("benjamin.amis@evolveu.ca");
 });
+
+test('For of loop Staff Email for company', () => {
+    const loopStaffEmail = functions.loopStaffOf(data.staff);
+    expect(loopStaffEmail[0])
+        .toEqual("jane.smith@evolveu.ca");
+    expect(loopStaffEmail[3])
+        .toEqual("olivia.notly@evolveu.ca");
+    expect(loopStaffEmail[6])
+        .toEqual("benjamin.amis@evolveu.ca");
+});
+
+
+// // 6th Daily (October 21, 2019): 
+// /*
+//     Sample data for the next few exercises.
+// */
+
+// const data = {
+//     staff: [
+//         { fname: "Jane", lname: "Smith", balance: 10 },
+//         { fname: "Liam", lname: "Henry", balance: 1000 },
+//         { fname: "Emma", lname: "Jones", balance: 1330 },
+//         { fname: "Olivia", lname: "Notly", balance: 310 },
+//         { fname: "Noah", lname: "Ho", balance: 503 },
+//         { fname: "William", lname: "Lee", balance: 520 },
+//         { fname: "Benjamin", lname: "Amis", balance: 150 },
+//     ],
+//     company: "EvolveU",
+//     city: "Calgary",
+//     prov: "Alberta"
+// };
+
+// /*Write the function to build email addresses for the company.*/
+
+// test('email builder for company', () => {
+//     const staffEmail = functions.loopStaff(data.staff);
+//     expect(staffEmail[0])
+//         .toEqual("jane.smith@evolveu.ca");
+//     expect(staffEmail[3])
+//         .toEqual("olivia.notly@evolveu.ca");
+//     expect(staffEmail[6])
+//         .toEqual("benjamin.amis@evolveu.ca");
+// });
 
 // 5th Daily: More Array Work - (October 16-17): 
 
